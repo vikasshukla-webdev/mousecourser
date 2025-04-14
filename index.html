@@ -74,16 +74,16 @@
  let button=document.querySelector(".button");
  parent.addEventListener("click" ,(e)=>{
     e.stopPropagation();
-    alert('parent');
+    alert('This is parent container');
  });
   child.addEventListener("click",(e)=>{
     e.stopPropagation();
-    alert('child');
+    alert('This is child container');
 
   });
   button.addEventListener("click",(e)=>{
     e.stopPropagation();
-    alert('button');
+    alert('this is button in child container of parent');
   
   });    
 
